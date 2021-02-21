@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1150dp"
+            android:background="#FFFFFF"
+            tools:context=".Menu.Instructions">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="406dp"
+                android:layout_height="150dp"
+                android:background="@drawable/fondoinstrucciones1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInstrucciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:fontFamily="@font/manjari_bold"
+                android:text="Instrucciones,"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:fontFamily="@font/manjari_regular"
+                android:text="reglas y movimientos"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtInstrucciones" />
+
+            <TextView
+                android:id="@+id/txtPiecesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/manjari_bold"
+                android:text="Fichas"
+                android:textColor="@color/textoN"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtPieces"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/txtPieces"
+                android:layout_width="317dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/manjari_regular"
+                android:gravity="center"
+                android:text="Los jugadores del ajedrez chino comienzan la partida con 2 Torres, 2 Caballos, 2 Elefantes, 2 Vasallos, 1 Emperador, 2 Cañones y 5 Peones. "
+                android:textColor="@color/textoN"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPiecesTitle" />
+
+            <TextView
+                android:id="@+id/txtGray"
+                android:layout_width="407dp"
+                android:layout_height="800dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/fondoinstrucciones2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPieces" />
+
+            <ImageView
+                android:id="@+id/imgGeneral"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/xiangqi_general_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtGeneral"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtGray" />
+
+
+            <TextView
+                android:id="@+id/txtGeneral"
+                android:layout_width="280dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="El rey o emperador solo puede moverse horizontal o verticalmente, y nunca puede abandonar el palacio. Además, ambos reyes tienen inscripciones distintas en el dorso de sus piezas. Se mueve sólo un espacio horizontal o verticalmente, sin poder abandonar el palacio."
+                android:textColor="@color/textoN"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtGray" />
+
+            <ImageView
+                android:id="@+id/imgAdvisor"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/xiangqi_advisor_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtAdvisor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgGeneral" />
+
+            <TextView
+                android:id="@+id/txtAdvisor"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="Los vasallos del ajedrez chino son la escolta o guardia del rey. Por eso, los vasallos tampoco pueden abandonar el palacio y deben permanecer siempre cerca del rey. Se muven diagonalmente."
+                android:textColor="@color/textoN"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtGeneral" />
+
+            <ImageView
+                android:id="@+id/imgElephant"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/xiangqi_elephant_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtElephant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgAdvisor" />
+
+            <TextView
+                android:id="@+id/txtElephant"
+                android:layout_width="280dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="La figura de los elefantes en el ajedrez chino es muy similar a la de los alfiles en el ajedrez occidental. Sin embargo, los elefantes solo se pueden mover dos espacios diagonalmente y nunca podrán atravesar el río."
+                android:textColor="@color/textoN"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAdvisor" />
+
+            <ImageView
+                android:id="@+id/imgSoldier"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/xiangqi_soldier_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtElephant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgElephant" />
+
+            <TextView
+                android:id="@+id/txtSoldier"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="Los soldados o peones chinos se mueven verticalmente mientras estén en su terreno. Sin embargo, una vez cruzan el río, pueden moverse vertical y horizontalmente, pero nunca podrán retroceder."
+                android:textColor="@color/textoN"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtElephant" />
+
+            <ImageView
+                android:id="@+id/imgChariot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/xiangqi_chariot_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtChariot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgSoldier" />
+
+            <TextView
+                android:id="@+id/txtChariot"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="Los carros de guerrra se mueven vertical u horizontalmente, pero nunca podrán superar el río e invadir territorio enemigo."
+                android:textSize="14sp"
+                android:textColor="@color/textoN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSoldier"/>
+
+            <ImageView
+                android:id="@+id/imgCannon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/xiangqi_cannon_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtChariot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgChariot" />
+
+            <TextView
+                android:id="@+id/txtCannon"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="Los soldados o peones chinos se mueven verticalmente mientras estén en su terreno. Sin embargo, una vez cruzan el río, pueden moverse vertical y horizontalmente, pero nunca podrán retroceder."
+                android:textColor="@color/textoN"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtChariot" />
+
+
+            <ImageView
+                android:id="@+id/imgHorse"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/xiangqi_horse_red"
+                app:layout_constraintEnd_toStartOf="@+id/txtCannon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCannon" />
+
+            <TextView
+                android:id="@+id/txtHorse"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/manjari_thin"
+                android:gravity="left"
+                android:text="El caballo chino se mueve igual que el caballo occidental: dos casillas en vertical y una casilla en horizontal. Sin embargo, el caballo chino no puede saltar a otras piezas, aliadas o enemigas. El caballo chino puede cruzar el río e invadir territorio enemigo."
+                android:textColor="@color/textoN"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCannon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
